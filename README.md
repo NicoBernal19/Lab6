@@ -7,8 +7,31 @@
 # Parte I - Despliegue app React (frontend) en Azure
 
 1) Busca Azure for Students en tu buscador de preferencias e ingresa con el correo institucional.
+
+![imagen](img/1.jpg)
+
+![imagen](img/2.jpg)
+
 2) Crea un budget de 1 dólar para la cuenta
+
+![imagen](img/3.jpg)
+
+![imagen](img/4.jpg)
+
+![imagen](img/5.jpg)
+
 3) El profesor guía el resto de pasos
+
+Primero creamos un grupo de recursos.
+![imagen](img/6.jpg)
+
+Ahora, dentro de ese grupo de recursos vamos a crear una aplicacion web estatica en donde vamos a alojar la aplicacion de la calculadora del laboratorio pasado.
+![imagen](img/9.jpg)
+
+![imagen](img/7.jpg)
+
+Luego de hacer todo el proceso vamos a ver que la aplicacion web estatica quedo lista con nuestra calculadora.
+![imagen](img/8.jpg)
 
 # Parte II - Despliegue app web spring MVC (o spring-boot backend)
 1) Inicie [Azure Cloud Shell](https://docs.microsoft.com/en-in/azure/cloud-shell/overview) desde el portal. Para implementar en un grupo de recursos, ingrese el siguiente comando
