@@ -23,14 +23,17 @@
 3) El profesor guía el resto de pasos
 
 Primero creamos un grupo de recursos.
+
 ![imagen](img/6.jpg)
 
 Ahora, dentro de ese grupo de recursos vamos a crear una aplicacion web estatica en donde vamos a alojar la aplicacion de la calculadora del laboratorio pasado.
+
 ![imagen](img/9.jpg)
 
 ![imagen](img/7.jpg)
 
 Luego de hacer todo el proceso vamos a ver que la aplicacion web estatica quedo lista con nuestra calculadora.
+
 ![imagen](img/8.jpg)
 
 # Parte II - Despliegue app web spring MVC (o spring-boot backend)
