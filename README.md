@@ -80,6 +80,12 @@ A continuación, navegue hasta la aplicación web que ha creado. Mientras implem
 
 ![imagen](img/16.jpg)
 
+![imagen](img/17.jpg)
+
+![imagen](img/18.jpg)
+
+![imagen](img/19.jpg)
+
 2) Seleccione Overview y click en Browse.
 
 ![image](https://github.com/PDSW-ECI/labs/assets/4140058/23e96cc7-473c-4457-aa2c-acce5c7b23ee)
@@ -87,6 +93,8 @@ A continuación, navegue hasta la aplicación web que ha creado. Mientras implem
 3) La página web se verá como la imagen de abajo.
 
 ![image](https://github.com/PDSW-ECI/labs/assets/4140058/87db1d63-7179-4ce8-a013-a6a1c06056d8)
+
+![imagen](img/20.jpg)
 
 A continuación, debe actualizar las cadenas de conexión para que la aplicación web se conecte correctamente a la base de datos. Hay varias formas de hacerlo, pero para los fines de esta práctica de laboratorio, adoptará un enfoque simple actualizándolo directamente en Azure Portal.
 
@@ -105,6 +113,8 @@ jdbc:mysql://{MySQL Server Name}:3306/alm?useSSL=true&requireSSL=false&autoRecon
 - su nombre de usuario: Valor que copió previamente de las Propiedades del servidor MySQL.
 - su contraseña: valor que proporcionó durante la creación del servidor de base de datos MySQL.
 
+![imagen](img/21.jpg)
+
 7) Haga clic en Guardar para guardar la cadena de conexión.
 > Nota: Las cadenas de conexión configuradas aquí estarán disponibles como variables de entorno, con el prefijo del tipo de conexión para aplicaciones Java (también para aplicaciones PHP, Python y Node). En el archivo src/main/resources/application.properties, recuperamos la cadena de conexión reemplazando el siguiente código:
 ```java
@@ -119,6 +129,9 @@ spring.datasource.url=${MYSQLCONNSTR_MyDatabase}
 spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
 spring.jpa.show-sql=true
 ```
+
+![imagen](img/22.jpg)
+
 Ahora ha instalado y configurado todos los recursos necesarios para implementar y ejecutar la aplicación.
 
 ## Ejercicio 3: implementar los cambios en la aplicación web
@@ -130,6 +143,10 @@ Configuración de la base de datos:
 Configuración del servicio FTP:
 <img width="1495" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/05f5d912-717b-497a-b58c-468368107219">
 
+![imagen](img/26.jpg)
+
+![imagen](img/27.jpg)
+
 Ejemplo conexión Filezilla:
 <img width="1059" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/c12f8be9-38dc-4906-a53b-d69d8cfe4016">
 <img width="1201" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/855db5f1-e2b2-4f9d-b3b8-77e1d90afa4a">
@@ -140,6 +157,14 @@ Ejemplo conexión Cyberduck:
 
 Configuración necesaria para acceder a FTP:
 <img width="840" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/5dbb25b3-8135-4715-b5f3-e6b0d939c08e">
+
+![imagen](img/29.jpg)
+
+![imagen](img/24.jpg)
+
+![imagen](img/25.jpg)
+
+![imagen](img/28.jpg)
 
 ## Entrega
 - El enlace de la aplicación React y Spring MVC desplegada en Azure
