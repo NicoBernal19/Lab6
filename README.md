@@ -33,10 +33,20 @@
 ```shell
 az group create --name MyResourceGroup --location westus
 ```
+
+![imagen](img/9.jpg)
+
+![imagen](img/10.jpg)
+
 2) Para crear un plan de servicio de aplicaciones (App service plan)
 ```shell
 az appservice plan create --resource-group MyResourceGroup --name MyPlan --sku F1
 ```
+
+![imagen](img/11.jpg)
+
+![imagen](img/12.jpg)
+
 3) Finalmente, cree el servidor MySQL con un nombre de servidor único.
 ```shell
 az account list-locations --query "[].{DisplayName:displayName, Name:name}" -o table # choose region
@@ -44,9 +54,14 @@ az configure --defaults location=eastus # set region
 az mysql flexible-server create --resource-group MyResourceGroup --name pongaunnombreunico --admin-user mysqldbuser --admin-password P2ssw0rd@123 --sku-name Standard_B1ms
 ```
 > Importante: Introduzca un nombre de servidor SQL único. Dado que el nombre de Azure SQL Server no admite las convenciones de nomenclatura de mayúsculas y minúsculas UPPER / Camel , utilice minúsculas para el valor del campo Nombre del servidor de base de datos. 
+
+![imagen](img/13.jpg)
+
 4) Navegue hasta el grupo de recursos que ha creado. Debería ver un servidor **Azure Database for MySQL server** aprovisionado. Seleccione el servidor de base de datos.
 
 ![image](https://github.com/PDSW-ECI/labs/assets/4140058/6eefacb6-31e5-47e3-b28d-4d1301c8d1e9)
+
+![imagen](img/14.jpg)
 
 5) Seleccione **Properties**. Guarde el **Server name** y el **Server admin login name** en un bloc de notas.
 
@@ -55,11 +70,15 @@ az mysql flexible-server create --resource-group MyResourceGroup --name pongaunn
 > En este ejemplo, el nombre del servidor es myshuttle-1-mysqldbserver.mysql.database.azure.com y el nombre de usuario administrador es mysqldbuser@myshuttle-1-mysqldbserver.
 6) Seleccione **Connection security**. Habilite la opción **Allow access to Azure services** y guarde los cambios. Esto proporciona acceso a los servicios de Azure para todas las bases de datos de su servidor MySQL.
 
+![imagen](img/15.jpg)
+
 ## Ejercicio 2: actualización de la configuración de la aplicación web
 A continuación, navegue hasta la aplicación web que ha creado. Mientras implementa una aplicación Java, debe cambiar el contenedor web de la aplicación web a Apache Tomcat.
 1) Seleccione **Configuration**. Establezca **Stack settings** como se muestra en la imagen a continuación y haga clic en Guardar.
 
 <img width="735" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/803a49a2-91fa-4122-8e43-6759717ed90b">
+
+![imagen](img/16.jpg)
 
 2) Seleccione Overview y click en Browse.
 
