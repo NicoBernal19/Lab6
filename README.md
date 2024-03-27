@@ -8,10 +8,25 @@
 
 1) Busca Azure for Students en tu buscador de preferencias e ingresa con el correo institucional.
 
+![imagen](img/1.jpg)
 
+![imagen](img/2.jpg)
 
 2) Crea un budget de 1 dólar para la cuenta
+
+![imagen](img/3.jpg)
+
+![imagen](img/4.jpg)
+
+![imagen](img/5.jpg)
+
 3) El profesor guía el resto de pasos
+
+![imagen](img/6.jpg)
+
+![imagen](img/7.jpg)
+
+![imagen](img/8.jpg)
 
 # Parte II - Despliegue app web spring MVC (o spring-boot backend)
 1) Inicie [Azure Cloud Shell](https://docs.microsoft.com/en-in/azure/cloud-shell/overview) desde el portal. Para implementar en un grupo de recursos, ingrese el siguiente comando
