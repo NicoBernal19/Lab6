@@ -170,4 +170,5 @@ Configuración necesaria para acceder a FTP:
 - El enlace de la aplicación React y Spring MVC desplegada en Azure
 
 Enlace React: https://agreeable-stone-067fc1310.5.azurestaticapps.net
+
 Enlace Spring MVC: cvds2024appweb.azurewebsites.net
